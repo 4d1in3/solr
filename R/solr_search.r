@@ -103,7 +103,7 @@ solr_search <- function(q='*:*', sort=NULL, start=NULL, rows=NULL, pageDoc=NULL,
   
   if(!is.null(fl)) fl <- paste0(fl, collapse = ",")
   args <- sc(list(q=q, sort=sort, start=start, rows=rows, pageDoc=pageDoc,
-      pageScore=pageScore, fl=fl, fq=fq, defType=defType, 
+      pageScore=pageScore, fl=fl, defType=defType, 
       timeAllowed=timeAllowed, qt=qt, wt=wt, NOW=NOW, TZ=TZ,
       echoHandler=echoHandler, echoParams=echoParams))
   
